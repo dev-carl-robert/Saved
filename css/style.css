@@ -1,0 +1,6 @@
+body {
+    background: url('../src/images/textura.jpg');
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+}
