@@ -1,6 +1,67 @@
+:root {
+    font-size: 62.5%;
+}
 body {
-    background: url('../src/images/textura.jpg');
+    background-image: radial-gradient(
+         circle, #292929, #272727,#262526,
+         #242324, #232122, #201e1f, #1e1c1c, 
+         #1b1919, #161515, #110f0f, #090808, #000000
+    );
     height: 100vh;
     width: 100vh;
-    overflow: hidden;
+    font-family: 'Libre Baskerville Static';
+}
+
+header {
+    /* background-color: antiquewhite; */
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+header .logo_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+header img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+    color: white;
+}
+
+header ul {
+    display: flex;
+    font-size: 2rem;
+    gap: 5rem;
+    letter-spacing: 3px; 
+    cursor: pointer;
+}
+
+header ul li:hover {
+    opacity: .8;
+}
+
+.sneakesImage {
+    position: absolute;
+    top: 5.2rem;
+    right: 9rem;
+    opacity: 0;
+    transition: opacity 2s;
+    height: 8rem;
+    width: 8rem;
+    
+}
+
+.sneakesImage.actived {
+    opacity: 1;
 }
